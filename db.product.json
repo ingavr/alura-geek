@@ -1,0 +1,16 @@
+{
+  "productos": [
+    {
+      "nombre": "Producto XYZ",
+      "precio": "6000",
+      "imagen": "https://i.ibb.co/1TybsXT/producto-3.png",
+      "id": "3"
+    },
+    {
+      "id": "c996",
+      "nombre": "arroz",
+      "precio": "82.54",
+      "imagen": "https://i.ibb.co/C1VKkRC/producto-4.png"
+    }
+  ]
+}

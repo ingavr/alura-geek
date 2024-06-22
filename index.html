@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Geek</title>
+    <link rel="icon" type="image/png" href="" />
+    <script
+      src="https://kit.fontawesome.com/2674b601ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <section class="mis_productos">
+        <h1 class="titles">Mis Productos:</h1>
+
+        <ul class="card__container" data-lista>
+          <!-- Aquí se agregan dinámicamente las tarjetas de productos -->
+        </ul>
+      </section>
+
+      <section class="agregar__producto">
+        <h2 class="titles">Agregar Producto:</h2>
+
+        <form class="container__formulario" data-formulario>
+          <input
+            name="titulo"
+            class="campo__escrita"
+            required
+            id="titulo"
+            placeholder="Nombre..."
+            data-nombre
+          />
+          <input
+            name="precio"
+            class="campo__escrita"
+            required
+            id="precio"
+            placeholder="Precio..."
+            data-precio
+          />
+          <input
+            name="imagen"
+            class="campo__escrita"
+            required
+            id="imagen"
+            placeholder="URL Imagen..."
+            data-imagen
+          />
+
+          <div>
+            <button class="formulario__boton" type="submit">Enviar</button>
+            <button type="button" class="formulario__boton__borrar">
+              Borrar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer font" id="">
+      <div class="icon__social">
+        <a class="social" href="#" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a class="social" href="#" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+        <a class="social" href="#" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
+      <div class="attribution">
+        Coded by
+        <a target="_blank" href="https://www.instagram.com/ing_av_/">IngAV</a>.
+      </div>
+    </footer>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

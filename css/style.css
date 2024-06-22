@@ -1,0 +1,281 @@
+*{
+    font-family: 'roboto-thin' ,Courier New, Courier, monospace;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.header{
+    height: 80px;
+    background-color: #5D04D9;
+    background-image: url(../image/header/image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.mis_productos{
+    padding: 40px 10px;
+}
+
+.titles{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+.card__container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ 
+    margin-top: 50px;
+    gap: 10px;
+    padding: 0 0 20px 0;
+    overflow-y: scroll;
+
+
+}
+
+.border{
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.card{
+    width: 196px;
+    height: 258px;
+    padding: 10px;
+    gap: 10px;
+    background-color: #5D04D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-container--info{
+    color: white;
+    
+}
+
+.nombre__producto{
+    font-size: 15px;
+    line-height: 19.5px;
+    font-weight: 400;
+}
+
+.card-container--value{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.value{
+    width: 142px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.8px;
+    
+}
+
+.btn_delete{
+    width: 24px;
+}
+
+.agregar__producto{
+    padding: 40px;
+}
+
+.container__formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input::placeholder{
+    color: #03318C;
+
+}
+
+.campo__escrita{
+    width: 80%;
+    height: 58px;
+    border: solid 3px #03318C;
+    border-radius: 50px;
+    padding: 0 2%;
+    color: #03318C;
+    margin: 1em;
+    font-size: 1.6em;
+}
+
+.formulario__boton {
+    padding: 1em 3em;
+    margin: 2em 0;
+    border: solid 3px #03318C;
+    border-radius: 10px;
+    background-color: #03318C;
+    color: white;
+}
+
+.formulario__boton__borrar{
+    padding: 1em 3em;
+    margin: 2em 0;
+    border: solid 3px #03318C;
+    border-radius: 10px;
+    background-color: white;
+    color: #03318C;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #5D04D9;
+    padding-bottom: 30px; 
+}
+
+.attribution {
+    margin: 30px;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    text-align: center; 
+}
+
+.attribution, a {
+    color: white;
+    text-decoration:underline;
+}
+
+.icon__social{
+    display: flex;
+    font-size: 30px;
+    gap: 15px;
+    
+}
+
+.social:hover{
+    color: #7f00ff;
+}
+
+@media screen and (min-width:1024px) {
+  .main{
+    flex-direction: row;
+    justify-content: space-around;
+
+
+  }
+
+  .mis_productos{
+    width: 758px;
+    margin-bottom: 40px;
+    
+  }
+
+  .card__container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content:center;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.23), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .card{
+    margin-top: 60px;
+  }
+
+  .container__formulario{
+    margin-top: 50px;
+  }
+
+  .campo__escrita{
+    width: 100%;
+    height: 45px;
+  }
+
+  .formulario__boton{
+    padding: 1em 3.5em;
+  }
+
+  .formulario__boton__borrar{
+    padding: 1em 3.5em;
+  }
+}
+
+/* .mis_productos{
+    height: 50%;
+    padding:  40px;
+    gap: 40px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+
+.titles{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card__container{
+    display: flex;
+    
+}
+
+.border{
+    border: solid 3px black;
+}
+.card{
+    background-color: #5D04D9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width:196px;
+    border-radius: 10px;
+    gap: 10px;
+    color: white;
+    font-weight: 800;
+    
+}
+
+
+.image_producto{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.card-container--info{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.card-container--value{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn_delete:hover{
+    
+    cursor: pointer;
+
+} */
