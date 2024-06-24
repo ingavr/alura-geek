@@ -1,6 +1,6 @@
 export async function listaCards() {
   try {
-    const conexion = await fetch("http://localhost:3001/productos");
+    const conexion = await fetch("https://api-fake-chi.vercel.app/productos");
     if (!conexion.ok) {
       throw new Error(`HTTP error! status: ${conexion.status}`);
     }
@@ -14,7 +14,7 @@ export async function listaCards() {
 
 export async function enviarProducto(nombre, precio, imagen) {
   try {
-    const conexion = await fetch("http://localhost:3001/productos", {
+    const conexion = await fetch("https://api-fake-chi.vercel.app/productos", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nombre, precio, imagen }),
@@ -34,7 +34,7 @@ export async function enviarProducto(nombre, precio, imagen) {
 
 export async function deleteProduct(id) {
   try {
-    const response = await fetch(`http://localhost:3001/productos/${id}`, {
+    const response = await fetch(`https://api-fake-chi.vercel.app/productos/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
